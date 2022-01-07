@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block title %} {{ page_title|safe }} {% endblock title %}
+
+
+{% block content %}
+{% include 'home/partials/_hero.html' with home=page %}
+{% include 'home/partials/_categories.html' with cats=page.CategoriesHome %}
+{% endblock content %}
